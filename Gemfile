@@ -1,19 +1,18 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+ruby '2.1.2'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.1.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.3'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 2.5.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -22,10 +21,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+#gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
 
@@ -45,3 +44,52 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+group :staging, :production do
+  #gem 'therubyracer', '0.10.2'
+  #gem 'libv8', '~> 3.3.10.4'
+  gem 'mysql2', '~> 0.3.13'
+end
+
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+#gem 'rest-client'
+#gem 'sidekiq'
+# needed for sidekiq web interface
+#gem 'sinatra', :require => false
+#gem 'roo', '~> 1.13.2'
+gem 'haml'
+
+#For rake deploy script
+#gem 'net-ssh', '2.0.23'
+
+#gem 'exception_notification'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'priscilla'
+end
+
+group :development do
+  #gem 'letter_opener'
+  #gem 'slim'
+  # use rubocop to ensure code quality
+  gem 'rubocop'
+end
+
+group :test do
+  #gem 'minitest'
+  #gem 'cucumber'
+  #gem 'cucumber-rails', require: false
+  gem 'rspec-rails'
+  #gem 'capybara'
+  #gem 'poltergeist'
+  #gem 'database_cleaner'
+  #gem 'factory_girl_rails'
+  gem 'nyan-cat-formatter'
+end
+
+
