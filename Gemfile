@@ -40,7 +40,7 @@ gem 'devise'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 group :staging, :production do
  gem 'pg'
- gem 'aws-s3'
+ #gem 'aws-s3'
  gem 'rails_12factor'
 end
 
