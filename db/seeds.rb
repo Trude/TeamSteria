@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Activity.create(name: 'Løpetur', points: 9)
+Activity.create(name: 'Joggetur', points: 6)
+Activity.create(name: 'Gå tur', points: 4)
+Activity.create(name: 'Styrketrening', points: 6)
+Activity.create(name: 'Intervaller', points: 10)
+Activity.create(name: 'Langrenn', points: 7)

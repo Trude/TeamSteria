@@ -19,7 +19,7 @@ gem 'net-ssh', '2.0.23'
 gem 'haml'
 #gem 'nokogiri'
 gem 'devise'
-#gem "simple_form", "~> 1.4.2"
+gem "simple_form", "~> 3.0.2"
 #gem 'newrelic_rpm'
 
 #gem 'google-analytics-rails'

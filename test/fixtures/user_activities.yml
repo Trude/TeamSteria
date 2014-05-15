@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activityId: MyString
+  integer: MyString
+  minutes: MyString
+  integer: MyString
+  comment: MyString
+
+two:
+  activityId: MyString
+  integer: MyString
+  minutes: MyString
+  integer: MyString
+  comment: MyString
